@@ -13,85 +13,83 @@
     <div class="sidebar">
         <section class="sidebar-top">
             <div class="profile-pic">
-                <img src="images/img.png" alt="Profile Picture">
+                <img id="profile-picture" src="" alt="Profile Picture">
                 <div class="hello-pic">
-                    <img src="images/hello.png" alt="Hello Wave">
+                    <img id="hello-picture" src="" alt="Hello Wave">
                 </div>
             </div>
-            <h2>Chris Evans</h2>
-            <h4>Senior Software Engineer</h4>
+            <h2 id="full-name"></h2>
+            <h4 id="role"></h4>
             <ul class="social-links">
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-instagram"></a></li>
-                <li><a href="#" class="fa fa-twitter"></a></li>
-                <li><a href="#" class="fa fa-linkedin"></a></li>
+                <li><a href="#" id="facebook-link" class="fa fa-facebook" target="_blank"></a></li>
+                <li><a href="#" id="instagram-link" class="fa fa-instagram" target="_blank"></a></li>
+                <li><a href="#" id="twitter-link" class="fa fa-twitter" target="_blank"></a></li>
+                <li><a href="#" id="linkedin-link" class="fa fa-linkedin" target="_blank"></a></li>
             </ul>
         </section>
         <section class="nav-menu">
             <ul>
-                <li><a href="#"><i class="fas fa-user"></i> About Me</a></li>
-                <li><a href="#"><i class="fas fa-folder"></i> Portfolio <span class="badge">16</span></a></li>
-                <li><a href="#"><i class="fas fa-briefcase"></i> Services & Pricing</a></li>
-                <li><a href="#"><i class="fas fa-file"></i> Resume</a></li>
-                <li><a href="#"><i class="fas fa-box"></i> Products</a></li>
-                <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
-                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> <span id="about-me-text"></span></a></li>
+                <li><a href="#"><i class="fas fa-folder"></i> <span id="portfolio-text"></span><span id="badge" class="badge">16</span></a></li>
+                <li><a href="#"><i class="fas fa-briefcase"></i> <span id="services-pricing-text"></span></a></li>
+                <li><a href="#"><i class="fas fa-file"></i> <span id="resume-text"></span></a></li>
+                <li><a href="#"><i class="fas fa-box"></i> <span id="products-text"></span></a></li>
+                <li><a href="#"><i class="fas fa-blog"></i> <span id="blog-text"></span></a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> <span id="contact-text"></span></a></li>
             </ul>
         </section>
         <section class="hire-button">
-            <button class="hire-btn"><i class="fas fa-send"></i> Hire Me</button>
+            <button class="hire-btn"><i class="fas fa-send"></i> <span id="hire-me"></span></button>
         </section>
     </div>
 
     <main class="main-content">
         <section class="intro">
-            <h1>HI, I'M A FREELANCER</h1>
-            <h2>Developer</h2>
-            <p>I'm a software engineer specializing in scalable web apps. Explore my <a href="#">blog</a>, <a href="#">project portfolio</a> and <a href="#">online resume</a>.</p>
+            <h1 id="intro-heading"></h1>
+            <h2 id="intro-subheading"></h2>
+            <p id="intro-description"></p>
             <div class="buttons">
-                <a href="#" class="btn-primary"><i class="fas fa-long-arrow-right"></i> View Portfolio</a>
-                <a href="#" class="btn-secondary"><i class="fas fa-address-card"></i>View Resume</a>
+                <a href="#" class="btn-primary"><i class="fas fa-long-arrow-right"></i> <span id="view-portfolio"></span></a>
+                <a href="#" class="btn-secondary"><i class="fas fa-address-card"></i> <span id="view-resume"></span></a>
             </div>
             <div class="stats">
                 <div class="stat">
-                    <h3>5</h3>
+                    <h3 id="years-experience"></h3>
                     <div class="stat-text">
-                        <p>Years of <br>Experience</p>
+                        <p id="years"></p>
                     </div>
                 </div>
                 <div class="stat">
-                    <h3>110</h3>
+                    <h3 id="projects-completed"></h3>
                     <div class="stat-text">
-                        <p>Projects <br>Completed</p>
+                        <p id="projects"></p>
                     </div>
                 </div>
                 <div class="stat">
-                    <h3>6k</h3>
+                    <h3 id="clients-worldwide"></h3>
                     <div class="stat-text">
-                        <p>Clients <br>Worldwide</p>
+                        <p id="clients"></p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="profile-section">
             <div class="profile-image">
-                <img src="images/img_1.png" alt="Profile Picture">
+                <img id="profile-image" src="" alt="Profile Picture">
             </div>
         </section>
         <section class="what-i-do">
-            <h2>What I do</h2>
+            <h2 id="what-i-do-heading"></h2>
             <div class="what-i-do-content">
-                <p>
-                    I have more than 10 years' experience building software for clients all over the world. Below is a
-                    quick overview of my main technical skill sets and technologies I use. Want to find out more
-                    about my experience? Check out my <a href="#">online resume</a> and <a href="#">project portfolio</a>.
-                </p>
+                <p id="what-i-do-description"></p>
             </div>
         </section>
         <section class="service-button">
-            <a href="#" class="btn-primary"><i class="fas fa-long-arrow-right"></i> Services & Pricing</a>
+            <a href="#" class="btn-primary"><i class="fas fa-long-arrow-right"></i> <span id="services-pricing-btn"></span></a>
         </section>
     </main>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>

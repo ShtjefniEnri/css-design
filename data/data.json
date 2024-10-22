@@ -1,0 +1,44 @@
+{
+  "firstName": "Chris",
+  "lastName": "Evans",
+  "role": "Senior Software Engineer",
+  "yearsOfExperience": 5,
+  "projectsCompleted": 110,
+  "clientsWorldwide": "6k",
+  "socialLinks": {
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "twitter": "https://twitter.com/",
+    "linkedin": "https://linkedin.com/"
+  },
+  "navbar": {
+    "aboutMe": "About Me",
+    "portfolio": "Portfolio",
+    "badge": 16,
+    "servicesPricing": "Services & Pricing",
+    "resume": "Resume",
+    "products": "Products",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hireMe": "Hire Me",
+  "viewPortfolio": "View Portfolio",
+  "viewResume": "View Resume",
+  "intro": {
+    "heading": "HI, I'M A FREELANCER",
+    "subheading": "Developer",
+    "description": "I'm a software engineer specializing in scalable web apps. Explore my <a href='#'>blog</a>, <a href='#'>project portfolio</a>, and <a href='#'>online resume</a>."
+  },
+  "stats": {
+    "years": "Years of <br>Experience",
+    "projects": "Projects <br>Completed",
+    "clients": "Clients <br>Worldwide"
+  },
+  "whatIDo": {
+    "heading": "What I do",
+    "description": "I have more than 10 years' experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies I use."
+  },
+  "profilePic": "images/img.png",
+  "profileImage": "images/img_1.png",
+  "helloPic": "images/hello.png"
+}
