@@ -10,12 +10,43 @@ body {
     width: 100%;
 }
 
+.toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: 3px solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
 .sidebar {
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: #f8f9fa;
     padding: 20px;
     width: 200px;
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar.closed {
+    width: 60px;
+}
+
+.closed .sidebar-top, .closed .nav-menu ul li a span, .closed .hire-button {
+    display: none;
+}
+
+.closed .toggle-btn {
+    right: -20px;
 }
 
 .sidebar-top {
@@ -300,11 +331,6 @@ body {
 
 
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        width: 100%;
-    }
-
     .sidebar {
         width: 100%;
     }

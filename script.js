@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('toggle-sidebar');
+    const sidebar = document.querySelector('.sidebar');
+    const toggleIcon = document.getElementById('toggle-icon');
+    const container = document.querySelector('.container');
+
     fetch('data/data.json')
         .then(response => response.json())
         .then(data => {
@@ -43,4 +48,20 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('profile-image').src = data.profileImage;
         })
         .catch(error => console.error('Error loading data:', error));
+
+    toggleBtn.addEventListener('click', function () {
+        sidebar.classList.toggle('closed');
+        if (sidebar.classList.contains('closed')) {
+            toggleIcon.classList.replace('fa-arrow-left', 'fa-arrow-right');
+        } else {
+            toggleIcon.classList.replace('fa-arrow-right', 'fa-arrow-left');
+        }
+        if (window.innerWidth <= 850) {
+            if (sidebar.classList.contains('closed')) {
+                container.style.flexDirection = 'row';
+            } else {
+                container.style.flexDirection = 'column';
+            }
+        }
+    });
 });
